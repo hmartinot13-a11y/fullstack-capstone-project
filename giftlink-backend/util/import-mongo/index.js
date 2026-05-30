@@ -3,6 +3,7 @@ const MongoClient = require('mongodb').MongoClient;
 const fs = require('fs');
 
 // MongoDB connection URL with authentication options
+console.log('MONGO_URL:', process.env.MONGO_URL);
 let url = `${process.env.MONGO_URL}`;
 let filename = `${__dirname}/gifts.json`;
 const dbName = 'giftdb';
