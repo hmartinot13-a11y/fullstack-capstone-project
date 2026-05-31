@@ -237,12 +237,12 @@ const data = await response.json();
                     <div key={index} className="card mb-3">
                         <div className="card-body">
                             <p className="comment-author"><strong>{comment.author}:</strong></p>
-                            <p className="comment-text">{comment.comment}</p>
-);
-))}
-</div>
-</div>
-</div>
-</div>
+                            <p className="comment-text">{comment.comment}</p> 
+                        </div>
+                    </div>
+                ))};
+            </div>
+        </div>
+    );
 }
 export default DetailsPage;
