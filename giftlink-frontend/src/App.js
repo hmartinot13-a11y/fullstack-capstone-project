@@ -11,16 +11,16 @@ function App() {
     <>
         <Navbar/>
         <Routes>
-          {/* the final code will not pass the products to every page, but each page will call the server API */}
+          {// the final code will not pass the products to every page, but each page will call the server API }
           <Route path="/" element={<MainPage />} />
           <Route path="/app" element={<MainPage />} />
         </Routes>
         </>
   );
 }
-*/
-export default App;
 
+export default App;
+*/
 import React from 'react';
 import { Routes, Route, useNavigate } from 'react-router-dom';
 import MainPage from './components/MainPage/MainPage';

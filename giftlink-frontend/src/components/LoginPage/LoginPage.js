@@ -32,8 +32,7 @@ function LoginPage() {
                                 className="form-control"
                                 placeholder="Enter your password"
                                 value ={password}
-                                onChange={(e) 
-=> setPassword(e.target.value)}
+                                onChange={(e) => setPassword(e.target.value)}
 />
 </div>
 {/* Include appropriate error message if login is incorrect*/}
