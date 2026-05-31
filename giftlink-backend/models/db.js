@@ -10,7 +10,7 @@ const dbName = "giftdb";
 
 async function connectToDatabase() {
     try {
-      //if (dbInstance){
+      //if (!dbInstance){
       //  return dbInstance
       //};
             
@@ -22,7 +22,8 @@ async function connectToDatabase() {
       This enables the new unified topology layer in the MongoDB driver. It improves server discovery and monitoring, handles failover more robustly, and provides a more stable connection experience.
       ---*/
       // Task 1: Connect to MongoDB
-      const client = new MongoClient(url, { useNewUrlParser: true, useUnifiedTopology: true });
+      // const client = new MongoClient(url, { useNewUrlParser: true, useUnifiedTopology: true });
+      const client = new MongoClient(url);
       await client.connect();
 
       // Task 2: Connect to database giftDB and store in variable dbInstance
