@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
-import './Profile.css'
+import './Profile.css'hand
 import {urlConfig} from '../../config';
 import { useAppContext } from '../../context/AuthContext';
 
@@ -51,7 +51,7 @@ setUpdatedDetails({
   [e.target.name]: e.target.value,
 });
 };
-const handleSubmit = async (e) => {
+/*const handleSubmit = async (e) => {
   e.preventDefault();
 
   try {
@@ -92,6 +92,41 @@ const handleSubmit = async (e) => {
     // Handle error case
   }
 };
+*/
+const handleSubmit = async () => {
+    try{
+      const response = await fetch(`/api/auth/update`, {
+           //Task 1: set method
+           //Task 2: set headers
+           //Task 3: set body to send user details
+            if (response.ok) {
+
+           		//Task 4: set the new name in the AppContext
+                //insert code here
+
+                //Task 5: set user name in the session
+                //insert code here
+
+                setUserDetails(updatedDetails);
+                setEditMode(false);
+
+                // Display success message to the user
+                setChanged("Name Changed Successfully!");
+                setTimeout(() => {
+                setChanged("");
+                navigate("/");
+              }, 1000);
+
+            } else {
+              // Handle error case
+              throw new Error("Failed to update profile");
+            }
+
+     })
+      }catch (e) {
+        console.log("Error updating details: " + e.message);
+    }
+}; //optionnal ;
 
 return (
 <div className="profile-container">
