@@ -9,14 +9,14 @@ const handleRegister = async () => {
         console.log("Register invoked")
 }
 return (
-<div className="container mt-5">
-<div className="row justify-content-center">
-<div className="col-md-6 col-lg-4">
-<div className="register-card p-4 border rounded">
-<h2 className="text-center mb-4 font-weight-bold">Register</h2>
-<div className="mb-3">
-<label htmlFor="firstName" className="form-label">FirstName</label>
-<input
+    <div className="container mt-5">
+        <div className="row justify-content-center">
+            <div className="col-md-6 col-lg-4">
+                <div className="register-card p-4 border rounded">
+                    <h2 className="text-center mb-4 font-weight-bold">Register</h2>
+                    <div className="mb-3">
+                        <label htmlFor="firstName" className="form-label">FirstName</label>
+                        <input
                             id="firstName"
                             type="text"
                             className="form-control"
