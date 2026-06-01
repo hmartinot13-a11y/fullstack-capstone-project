@@ -47,7 +47,7 @@ jobs:
 
       - name: Run build
         run: |
-          cd giftlink-frontend
+          cd ./giftlink-frontend
           npm install
           npm run build
           echo "Client-side build successfully"
