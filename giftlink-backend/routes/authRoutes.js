@@ -11,7 +11,7 @@ const pino = require('pino');  // Import Pino logger
 const logger = pino();  // Create a Pino logger instance
 
 //Task 1: for PUT fct Use the `body`,`validationResult` from `express-validator` for input validation
-const { body, validationResult } = require('express-validator');
+//const { body, validationResult } = require('express-validator');
 
 dotenv.config();
 
