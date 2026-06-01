@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
-import './Profile.css'hand
+import './Profile.css';
 import {urlConfig} from '../../config';
 import { useAppContext } from '../../context/AuthContext';
 
@@ -51,7 +51,8 @@ setUpdatedDetails({
   [e.target.name]: e.target.value,
 });
 };
-/*const handleSubmit = async (e) => {
+
+const handleSubmit = async (e) => {
   e.preventDefault();
 
   try {
@@ -92,8 +93,8 @@ setUpdatedDetails({
     // Handle error case
   }
 };
-*/
-const handleSubmit = async () => {
+
+/*const handleSubmit = async () => {
     try{
       const response = await fetch(`/api/auth/update`, {
            //Task 1: set method
@@ -126,7 +127,7 @@ const handleSubmit = async () => {
       }catch (e) {
         console.log("Error updating details: " + e.message);
     }
-}; //optionnal ;
+}; //optionnal ;*/
 
 return (
 <div className="profile-container">

@@ -15,7 +15,8 @@ export default function Navbar() {
 }
 */
 
-import React from 'react';
+//import React from 'react';
+import React, { useEffect } from 'react';
 // Handle When the user registers, the user is logged in. Once the user has logged in to the website, rather than display the login and register buttons, the navbar needs to display a logout
 import { Link, useNavigate } from 'react-router-dom'
 import {urlConfig} from '../../config';
