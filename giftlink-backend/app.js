@@ -17,7 +17,8 @@ connectToDatabase()
     pinoLogger.info('Connected to DB');
 })
 .catch((e) => {
-    console.error('Failed to connect to DB', e)});
+    console.error('Failed to connect to DB', e);
+});
 
 app.use(express.json());
 
@@ -58,8 +59,8 @@ app.use((err, req, res, next) => {
 });
 
 app.get("/",(req,res)=>{
-    res.send("Inside the server")
-})
+    res.send("Inside the server");
+});
 
 app.listen(port, () => {
     console.log(`Server running on port ${port}`);
